@@ -1,2 +1,2 @@
-# Template
-前端开发模板
+# Template Generator
+前端开发模板生成器
