@@ -1,0 +1,19 @@
+{
+  "name": "pella",
+  "version": "0.0.1",
+  "description": "a powerfull frontend projects generator",
+  "main": "index.js",
+  "bin": {
+    "pella": "./bin/pella"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "x4storm <x4storm@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "request": "^2.75.0"
+  }
+}
