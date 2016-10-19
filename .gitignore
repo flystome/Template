@@ -38,3 +38,5 @@ jspm_packages
 
 # OS trash files
 .DS_Store
+
+build
