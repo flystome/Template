@@ -1,27 +1,28 @@
 const gulp = require('gulp')
-const del = require('del')
-const merge = require('merge-stream')
-const runSequence = require('run-sequence')
-const sourcemaps = require('gulp-sourcemaps')
-
-const less = require('gulp-less')
-const autoPrefixer = require('gulp-autoprefixer')
-
-const browserify = require('gulp-browserify')
-
+// 通用插件引入
+const del = require('del') // 删除文件
+const merge = require('merge-stream') // 合并多个 stream 流
+const runSequence = require('run-sequence') // 安排任务的执行顺序
+const sourcemaps = require('gulp-sourcemaps') // 为压缩文件或预处理文件生成用于调试的代码映射
+// 样式处理插件
+const less = require('gulp-less') // 编译 less 为 css
+const autoPrefixer = require('gulp-autoprefixer') // 自动补全 css 属性的浏览器前缀
+// JavaScript 模块化方案
+const browserify = require('gulp-browserify') // 像写 Node 代码一样写前端代码
+// 雪碧图自动合并
 const spritesmith = require('gulp.spritesmith')
-
+// 模板引擎
 const ejs = require('gulp-ejs')
-
+// 浏览器自动刷新
 const browserSync = require('browser-sync').create()
 const reload = browserSync.reload
-
+// 环境目录定义
 var env = {
   'dev': 'src/', // 开发环境
   'test': 'build/', // 测试联调环境
   'production': 'dist/', // 生产发布环境
 }
-
+// 在执行任务之前，先清除该任务产生的文件的任务集
 gulp.task('clean:style', function() {
   return del(['build/assets/css/**']);
 });
