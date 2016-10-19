@@ -8,4 +8,26 @@
 
 ## 目录结构定义
 
+``` dir-tree
+.
+├── gulpfile.js
+├── package.json
+├── _config
+│   └── www
+├── build
+│   ├── images
+│   ├── javascripts
+│   └── stylesheets
+│       └── style.css
+├── dist
+└── src
+    ├── assets
+    │   ├── style
+    │   ├── script
+    │   ├── plugin
+    │   └── images
+    ├── inc
+    └── index.html
+```
+
 ## 任务定义
